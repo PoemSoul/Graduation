@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/return_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/return_pic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="注册账号"
+            android:textColor="#000"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入账号"
+            android:maxLength="20"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:singleLine="true"
+            android:textColorHint="#aaa"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:singleLine="true"
+            android:textColorHint="#aaa"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/register_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:singleLine="true"
+            android:textColorHint="#aaa"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/register_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:singleLine="true"
+            android:textColorHint="#aaa"
+            android:textCursorDrawable="@null" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="请选择您的性别"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/gender_check"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/btnMan"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:textColor="@drawable/radiobutton_text_color"
+                    android:background="@drawable/radiobutton_background"
+                    android:text="男"
+                    android:textSize="16dp" />
+
+
+                <RadioButton
+                    android:id="@+id/btnWoman"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:textColor="@drawable/radiobutton_text_color"
+                    android:background="@drawable/radiobutton_background"
+                    android:text="女"
+                    android:textSize="16dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_selector"
+            android:text="立即注册"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

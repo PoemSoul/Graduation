@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/main_home_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <RadioButton
+            android:id="@+id/radio_button_home"
+            android:checked="true"
+            android:text="首页"
+            android:drawableTop="@drawable/tab_home_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_market"
+            android:text="行情"
+            android:drawableTop="@drawable/tab_market_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_optional"
+            android:text="自选"
+            android:drawableTop="@drawable/tab_optional_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_trading"
+            android:text="交易"
+            android:drawableTop="@drawable/tab_trading_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+        <RadioButton
+            android:id="@+id/radio_button_information"
+            android:text="资讯"
+            android:drawableTop="@drawable/tab_information_selector"
+            style="@style/RadioGroupButtonStyle"
+            />
+    </RadioGroup>
+</LinearLayout>
