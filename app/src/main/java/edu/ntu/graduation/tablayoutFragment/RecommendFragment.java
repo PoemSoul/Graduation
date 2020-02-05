@@ -37,10 +37,10 @@ public class RecommendFragment extends BaseFragment {
             initView();
             initRecommendList();
             RecommendListAdapter adapter=new RecommendListAdapter(getActivity(),R.layout.main_home_stock_recommend_list,recommendLists);
-            listView=(ListView)mView.findViewById(R.id.recommend_list);
+            listView=mView.findViewById(R.id.recommend_list);
             listView.setAdapter(adapter);
             isPrepared = true;
-//        实现懒加载
+            //实现懒加载
             lazyLoad();
         }
         //缓存的mView需要判断是否已经被加过parent， 如果有parent需要从parent删除，要不然会发生这个mView已经有parent的错误。

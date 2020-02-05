@@ -13,6 +13,7 @@ import java.util.List;
 
 import edu.ntu.graduation.R;
 import edu.ntu.graduation.tablayoutFragment.CommunityFragment;
+import edu.ntu.graduation.tablayoutFragment.FocusOnFragment;
 import edu.ntu.graduation.tablayoutFragment.MyPagerAdapter;
 import edu.ntu.graduation.tablayoutFragment.NewsFlashFragment;
 import edu.ntu.graduation.tablayoutFragment.QuotationFragment;
@@ -29,6 +30,7 @@ public class MainHomeStock extends Fragment{
     private NewsFlashFragment mNewsFlashFragment=new NewsFlashFragment();
     private CommunityFragment mCommunityFragment=new CommunityFragment();
     private QuotationFragment mQuotationFragment=new QuotationFragment();
+    private FocusOnFragment mFocusOnFragment=new FocusOnFragment();
 
     public MainHomeStock  getFragment() {
         if (fa == null) {
@@ -56,10 +58,12 @@ public class MainHomeStock extends Fragment{
 
     private void initData() {
         fragments.add(mRecommendFragment.newInstance("recommend"));
+        fragments.add(mFocusOnFragment.newInstance("focus on"));
         fragments.add(mNewsFlashFragment.newInstance("news flash"));
         fragments.add(mCommunityFragment.newInstance("community"));
         fragments.add(mQuotationFragment.newInstance("quotation"));
         titles.add("推荐");
+        titles.add("关注");
         titles.add("快讯");
         titles.add("社区");
         titles.add("盘面");

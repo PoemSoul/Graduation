@@ -7,10 +7,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
-        <edu.ntu.graduation.util.NoScrollListview
-            android:id="@+id/recommend_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </edu.ntu.graduation.util.NoScrollListview>
+        <include layout="@layout/main_home_stock_focus_on_list"/>
+<!--        <edu.ntu.graduation.util.NoScrollListview-->
+<!--            android:id="@+id/focus_on_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:divider="@color/light_gray"-->
+<!--            android:dividerHeight="18dp">-->
+<!--        </edu.ntu.graduation.util.NoScrollListview>-->
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
