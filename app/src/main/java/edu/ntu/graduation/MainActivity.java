@@ -38,12 +38,17 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.news_body);
-        initButton();
-//        initFragment();
-//        initBottomBar();
-//        changeMainFragment(0);
+        setContentView(R.layout.activity_main);
+//        initButton();
+        initFragment();
+        initBottomBar();
+        changeMainFragment(0);
     }
+
+    /**
+     * 新闻正文Button初始化代码，非activity_main中代码
+     */
+
     private void initButton() {
         Button isPraised = findViewById(R.id.news_body_praised_btn);
         Button weChat = findViewById(R.id.news_body_wechat_btn);
