@@ -49,7 +49,7 @@ public class FocusOnFragment extends BaseFragment {
     private void initView() {
         Bundle bundle = getArguments();
         String args = bundle.getString("agrs1");
-        Button is_praised=mView.findViewById(R.id.focus_on_is_praised);
+        Button is_praised=mView.findViewById(R.id.focus_on_praised_btn);
         Drawable praisedImage=getResources().getDrawable(R.drawable.praise_unchecked);
         praisedImage.setBounds(0,0,60,60);
         is_praised.setCompoundDrawables(praisedImage,null,null,null);

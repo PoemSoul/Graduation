@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -37,12 +38,27 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        initFragment();
-//        initListener();
-        initBottomBar();
-        changeMainFragment(0);
+        setContentView(R.layout.news_body);
+        initButton();
+//        initFragment();
+//        initBottomBar();
+//        changeMainFragment(0);
     }
+    private void initButton() {
+        Button isPraised = findViewById(R.id.news_body_praised_btn);
+        Button weChat = findViewById(R.id.news_body_wechat_btn);
+        Button circleOfFriends = findViewById(R.id.news_body_circle_of_friends_btn);
+        Drawable praisedImage=getResources().getDrawable(R.drawable.praise_unchecked);
+        Drawable weChatImage=getResources().getDrawable(R.drawable.wechat);
+        Drawable circleOfFriendsImage=getResources().getDrawable(R.drawable.circle_of_friends);
+        praisedImage.setBounds(0,0,60,60);
+        weChatImage.setBounds(0,0,60,60);
+        circleOfFriendsImage.setBounds(0,0,60,60);
+        isPraised.setCompoundDrawables(praisedImage,null,null,null);
+        weChat.setCompoundDrawables(weChatImage,null,null,null);
+        circleOfFriends.setCompoundDrawables(circleOfFriendsImage,null,null,null);
+    }
+
     private void initBottomBar() {
         main_home = (RadioButton) findViewById(R.id.radio_button_home);
         main_market = (RadioButton) findViewById(R.id.radio_button_market);
@@ -92,27 +108,6 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
         transaction.show(fragments[index]).commit();
     }
 
-//    private void changeHomeFragment(Fragment fm) {
-//        FragmentManager supportFragmentManager = getSupportFragmentManager();
-//        FragmentTransaction transaction = supportFragmentManager.beginTransaction();
-//        transaction.replace(R.id.main_home_container, fm);
-//        transaction.commit();
-//    }
 
-
-//    private void initView() {
-//        btnRegister=(Button)findViewById(R.id.register_btn);
-//    }
-//
-//    private void initListener() {
-//        btnRegister.setOnClickListener(this);
-//    }
-//
-//    @Override
-//    public void onClick(View view) {
-//        if(view.getId()==R.id.register_btn){
-//            ToastCustom.getInstance(context).show("请输入用户名", 3000);
-//        }
-//    }
 }
 

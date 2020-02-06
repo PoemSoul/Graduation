@@ -86,7 +86,7 @@
                 />
         </LinearLayout>
         <Button
-            android:id="@+id/focus_on_is_praised"
+            android:id="@+id/focus_on_praised_btn"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
