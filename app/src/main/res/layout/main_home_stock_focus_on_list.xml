@@ -50,26 +50,24 @@
         android:text="管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批"
         android:ellipsize="end"
         android:lines="3" />
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:orientation="horizontal">
         <TextView
             android:gravity="center_vertical"
             android:id="@+id/focus_on_number_of_read"
-            android:layout_width="0dp"
+            android:layout_width="160dp"
             android:layout_height="40dp"
             android:textColor="@color/text_gray"
             android:textSize="14sp"
-            android:text="9999999人已阅读"
-            android:layout_weight="2"/>
+            android:text="9999999人已阅读" />
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="80dp"
             android:layout_height="40dp"
+            android:layout_toLeftOf="@id/focus_on_praised_btn"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_weight="1">
+            android:gravity="center">
             <ImageView
                 android:layout_width="16dp"
                 android:layout_height="16dp"
@@ -85,16 +83,20 @@
                 android:text="9"
                 />
         </LinearLayout>
-        <Button
+        <RadioButton
             android:id="@+id/focus_on_praised_btn"
-            android:layout_width="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
             android:layout_height="40dp"
-            android:layout_weight="1"
-            style="?android:attr/borderlessButtonStyle"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:button="@null"
+            android:background="@null"
             android:text="1"
-            android:textColor="@color/text_gray"
-            android:drawableLeft="@drawable/praise_unchecked"/>
-    </LinearLayout>
+            android:textColor="@color/checked_red_unchecked_text_gray_selector"
+            android:drawableLeft="@drawable/praised_image_selector"/>
+    </RelativeLayout>
 
 
 </LinearLayout>

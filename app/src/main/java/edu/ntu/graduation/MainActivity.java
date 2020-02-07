@@ -50,10 +50,10 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
      */
 
     private void initButton() {
-        Button isPraised = findViewById(R.id.news_body_praised_btn);
+        RadioButton isPraised = findViewById(R.id.news_body_praised_btn);
         Button weChat = findViewById(R.id.news_body_wechat_btn);
         Button circleOfFriends = findViewById(R.id.news_body_circle_of_friends_btn);
-        Drawable praisedImage=getResources().getDrawable(R.drawable.praise_unchecked);
+        Drawable praisedImage=getResources().getDrawable(R.drawable.praised_image_selector);
         Drawable weChatImage=getResources().getDrawable(R.drawable.wechat);
         Drawable circleOfFriendsImage=getResources().getDrawable(R.drawable.circle_of_friends);
         praisedImage.setBounds(0,0,60,60);

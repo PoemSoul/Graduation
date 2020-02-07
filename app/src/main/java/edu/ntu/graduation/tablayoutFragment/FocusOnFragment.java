@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.RadioButton;
 
 import edu.ntu.graduation.R;
 
@@ -49,8 +49,8 @@ public class FocusOnFragment extends BaseFragment {
     private void initView() {
         Bundle bundle = getArguments();
         String args = bundle.getString("agrs1");
-        Button is_praised=mView.findViewById(R.id.focus_on_praised_btn);
-        Drawable praisedImage=getResources().getDrawable(R.drawable.praise_unchecked);
+        RadioButton is_praised=mView.findViewById(R.id.focus_on_praised_btn);
+        Drawable praisedImage=getResources().getDrawable(R.drawable.praised_image_selector);
         praisedImage.setBounds(0,0,60,60);
         is_praised.setCompoundDrawables(praisedImage,null,null,null);
     }
