@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?android:colorBackground"
+    android:paddingTop="20dp">
+
+    <ImageButton
+        android:id="@+id/news_body_comments_head_portrait"
+        android:layout_marginTop="8dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/man_icon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/news_body_comments_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:text="此股牛逼"/>
+
+        <TextView
+            android:id="@+id/news_body_comments_stock_age"
+            android:layout_toRightOf="@id/news_body_comments_name"
+            android:layout_above="@id/news_body_comments_content"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F0AF04"
+            android:background="#30FFC107"
+            android:textSize="11sp"
+            android:text="股龄12年"/>
+
+        <TextView
+            android:id="@+id/news_body_comments_content"
+            android:layout_below="@id/news_body_comments_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="你还是太年轻了，太年轻了，太年轻了，太年轻了。"/>
+
+        <TextView
+            android:id="@+id/news_body_comments_time"
+            android:layout_below="@id/news_body_comments_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"
+            android:text="昨天19:11"/>
+
+        <TextView
+            android:id="@+id/news_body_comments_reply"
+            android:layout_below="@id/news_body_comments_content"
+            android:layout_toRightOf="@id/news_body_comments_time"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="回复"
+            android:clickable="true"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/news_body_comments_content">
+            <RadioButton
+                android:id="@+id/news_body_comments_praised"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@null"
+                android:textSize="15sp"
+                android:text="123"
+                android:textColor="@color/checked_red_unchecked_black_selector"
+                android:drawableRight="@drawable/praised_image_selector"/>
+        </RadioGroup>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/news_body_comments_reply_list"-->
+<!--            android:layout_below="@id/news_body_comments_time"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <include-->
+<!--                layout="@layout/news_body_comments_reply_list_item"/>-->
+<!--            <include-->
+<!--                layout="@layout/news_body_comments_reply_list_item"/>-->
+<!--            <include-->
+<!--                layout="@layout/news_body_comments_reply_list_item"/>-->
+<!--        </LinearLayout>-->
+        <edu.ntu.graduation.util.NoScrollListview
+            android:id="@+id/news_body_comments_reply_list"
+            android:layout_below="@id/news_body_comments_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/light_gray"
+            android:dividerHeight="5dp"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true"
+            android:layout_marginTop="16dp">
+
+        </edu.ntu.graduation.util.NoScrollListview>
+
+        <View
+            android:layout_below="@id/news_body_comments_reply_list"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.6"
+            android:background="@color/light_gray"
+            />
+    </RelativeLayout>
+</LinearLayout>

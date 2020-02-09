@@ -65,7 +65,7 @@
         <LinearLayout
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:layout_toLeftOf="@id/focus_on_praised_btn"
+            android:layout_toLeftOf="@id/focus_on_praised_group"
             android:orientation="horizontal"
             android:gravity="center">
             <ImageView
@@ -83,19 +83,24 @@
                 android:text="9"
                 />
         </LinearLayout>
-        <RadioButton
-            android:id="@+id/focus_on_praised_btn"
-            android:layout_alignParentRight="true"
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:button="@null"
-            android:background="@null"
-            android:text="1"
-            android:textColor="@color/checked_red_unchecked_text_gray_selector"
-            android:drawableLeft="@drawable/praised_image_selector"/>
+        <RadioGroup
+            android:id="@+id/focus_on_praised_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <RadioButton
+                android:id="@+id/focus_on_praised_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:button="@null"
+                android:background="@null"
+                android:text="1"
+                android:textColor="@color/checked_red_unchecked_gray_selector"
+                android:drawableLeft="@drawable/praised_image_selector"/>
+        </RadioGroup>
     </RelativeLayout>
 
 

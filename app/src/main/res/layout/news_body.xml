@@ -137,7 +137,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="50dp"
                     >
-                    <LinearLayout
+                    <RadioGroup
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -155,7 +155,7 @@
                             android:textColor="@color/checked_red_unchecked_black_selector"
                             android:textSize="14sp"
                             android:text="123"/>
-                    </LinearLayout>
+                    </RadioGroup>
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -265,12 +265,24 @@
                     android:alpha="0.6"
                     android:background="@color/gray"
                     />
-                <edu.ntu.graduation.util.NoScrollListview
-                    android:id="@+id/news_body_comment_list"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
-                </edu.ntu.graduation.util.NoScrollListview>
+                    <TextView
+                        android:layout_marginTop="28dp"
+                        android:layout_marginBottom="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="还没有人评论哦，快来抢沙发..."/>
+                    <edu.ntu.graduation.util.NoScrollListview
+                        android:id="@+id/news_body_comment_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </edu.ntu.graduation.util.NoScrollListview>
+                    <include layout="@layout/news_body_comments_list_item"/>
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

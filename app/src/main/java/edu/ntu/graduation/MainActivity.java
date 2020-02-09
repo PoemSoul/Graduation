@@ -38,11 +38,11 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-//        initButton();
-        initFragment();
-        initBottomBar();
-        changeMainFragment(0);
+        setContentView(R.layout.news_body);
+        initButton();
+//        initFragment();
+//        initBottomBar();
+//        changeMainFragment(0);
     }
 
     /**
@@ -50,18 +50,22 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
      */
 
     private void initButton() {
-        RadioButton isPraised = findViewById(R.id.news_body_praised_btn);
+        RadioButton newsPraised = findViewById(R.id.news_body_praised_btn);
         Button weChat = findViewById(R.id.news_body_wechat_btn);
         Button circleOfFriends = findViewById(R.id.news_body_circle_of_friends_btn);
-        Drawable praisedImage=getResources().getDrawable(R.drawable.praised_image_selector);
+        RadioButton commentsPraised = findViewById(R.id.news_body_comments_praised);
+        Drawable newsPraisedImage=getResources().getDrawable(R.drawable.praised_image_selector);
         Drawable weChatImage=getResources().getDrawable(R.drawable.wechat);
         Drawable circleOfFriendsImage=getResources().getDrawable(R.drawable.circle_of_friends);
-        praisedImage.setBounds(0,0,60,60);
+        Drawable commentsPraisedImage=getResources().getDrawable(R.drawable.praised_image_selector);
+        newsPraisedImage.setBounds(0,0,60,60);
         weChatImage.setBounds(0,0,60,60);
         circleOfFriendsImage.setBounds(0,0,60,60);
-        isPraised.setCompoundDrawables(praisedImage,null,null,null);
+        commentsPraisedImage.setBounds(0,0,60,60);
+        newsPraised.setCompoundDrawables(newsPraisedImage,null,null,null);
         weChat.setCompoundDrawables(weChatImage,null,null,null);
         circleOfFriends.setCompoundDrawables(circleOfFriendsImage,null,null,null);
+        commentsPraised.setCompoundDrawables(null,null,commentsPraisedImage,null);
     }
 
     private void initBottomBar() {
