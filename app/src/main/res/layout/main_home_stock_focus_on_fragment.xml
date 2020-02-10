@@ -5,15 +5,14 @@
     android:layout_height="match_parent">
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:layout_height="match_parent">
         <include layout="@layout/main_home_stock_focus_on_list"/>
-        <edu.ntu.graduation.util.NoScrollListview
-            android:id="@+id/focus_on_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="@color/light_gray"
-            android:dividerHeight="18dp">
-        </edu.ntu.graduation.util.NoScrollListview>
+<!--        <edu.ntu.graduation.util.NoScrollListview-->
+<!--            android:id="@+id/focus_on_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:divider="@color/light_gray"-->
+<!--            android:dividerHeight="18dp">-->
+<!--        </edu.ntu.graduation.util.NoScrollListview>-->
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
