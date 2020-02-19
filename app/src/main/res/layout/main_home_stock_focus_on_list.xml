@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:text="管润玮开法拉利"
+                android:text=""
                 android:textSize="16sp"
             />
             <TextView
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:text="管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批管总牛批"
+        android:text=""
         android:ellipsize="end"
         android:lines="3" />
     <RelativeLayout

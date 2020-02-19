@@ -5,17 +5,133 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
-        <LinearLayout
+        android:fillViewport="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="28dp"
+        android:paddingBottom="28dp">
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/stock_quotation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="沪深涨跌分布"/>
+
+            <TextView
+                android:id="@+id/stock_quotation_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/stock_quotation_grade"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp"
+                android:text="数据更新于2020-02-19 09:52"/>
+
+            <TextView
+                android:id="@+id/stock_quotation_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/stock_quotation_title"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="盘面评分：大盘趋势偏弱"
+                />
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textSize="60dp"
-                android:text="Fragment4"/>
-        </LinearLayout>
+                android:layout_marginTop="14dp"
+                android:layout_below="@id/stock_quotation_grade"
+                android:background="@color/light_gray"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textSize="13.4sp"
+                        android:text="得分"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textSize="13.4sp"
+                        android:text="涨家数"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textSize="13.4sp"
+                        android:text="跌家数"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray"
+                        android:textSize="13.4sp"
+                        android:text="热门板块"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                    <TextView
+                        android:id="@+id/stock_quotation_score"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="13.4sp"
+                        android:text="一般"/>
+                    <TextView
+                        android:id="@+id/stock_quotation_number_of_rose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="13.4sp"
+                        android:text="125"/>
+                    <TextView
+                        android:id="@+id/stock_quotation_number_of_down"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="13.4sp"
+                        android:text="3633"/>
+                    <TextView
+                        android:id="@+id/stock_quotation_hot_plate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="13.4sp"
+                        android:text="口罩"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
