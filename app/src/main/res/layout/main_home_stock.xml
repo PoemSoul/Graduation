@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="14dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp">
                 <LinearLayout
@@ -81,10 +81,10 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/stock_market_index_btn"
+                        android:id="@+id/dapanzhishu_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/stock_market_index" />
+                        android:background="@drawable/dapanzhishu" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -100,29 +100,10 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/hot_plate_btn"
+                        android:id="@+id/zixuangu_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/hot_plate" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:paddingTop="4dp"
-                        android:textSize="12dp"
-                        android:text="热门板块"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_weight="1">
-                    <ImageButton
-                        android:id="@+id/optional_stock_btn"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:background="@drawable/optional_stock" />
+                        android:background="@drawable/zixuangu" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -138,17 +119,17 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/stock_picking_btn"
+                        android:id="@+id/touzicankao_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/stock_picking" />
+                        android:background="@drawable/touzicankao" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:paddingTop="4dp"
                         android:textSize="12dp"
-                        android:text="选股"/>
+                        android:text="投资参考"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -157,17 +138,36 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/open_an_account_btn"
+                        android:id="@+id/lungusheqv_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/open_an_account" />
+                        android:background="@drawable/lungusheqv" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:paddingTop="4dp"
                         android:textSize="12dp"
-                        android:text="股票开户"/>
+                        android:text="论股社区"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:id="@+id/gumingxuexiao_btn"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/gumingxuexiao" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:textSize="12dp"
+                        android:text="股民学校"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -183,17 +183,17 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/shareholders_school_btn"
+                        android:id="@+id/longhubang_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/shareholders_school" />
+                        android:background="@drawable/longhubang" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:paddingTop="4dp"
                         android:textSize="12dp"
-                        android:text="股民学校"/>
+                        android:text="龙虎榜"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -202,17 +202,17 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/kechuang_btn"
+                        android:id="@+id/wencai_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/kechuang" />
+                        android:background="@drawable/wencai" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:paddingTop="4dp"
                         android:textSize="12dp"
-                        android:text="科创开通"/>
+                        android:text="问财"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -221,17 +221,17 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/vip_btn"
+                        android:id="@+id/wenda_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/vip" />
+                        android:background="@drawable/wenda" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:paddingTop="4dp"
                         android:textSize="12dp"
-                        android:text="决策"/>
+                        android:text="问答"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -240,17 +240,17 @@
                     android:gravity="center"
                     android:layout_weight="1">
                     <ImageButton
-                        android:id="@+id/closing_btn"
+                        android:id="@+id/tingfupai_btn"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:background="@drawable/closing" />
+                        android:background="@drawable/tingfupai" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:paddingTop="4dp"
                         android:textSize="12dp"
-                        android:text="收盘宝"/>
+                        android:text="停复牌"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -274,7 +274,7 @@
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="6dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="14dp"
                 android:alpha="0.6"
                 android:background="@color/light_gray"
                 />
