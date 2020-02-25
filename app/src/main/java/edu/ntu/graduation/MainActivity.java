@@ -16,7 +16,7 @@ import edu.ntu.graduation.fragment.MainHome;
 import edu.ntu.graduation.fragment.MainInformation;
 import edu.ntu.graduation.fragment.MainMarket;
 import edu.ntu.graduation.fragment.MainOptional;
-import edu.ntu.graduation.fragment.MainTrading;
+import edu.ntu.graduation.fragment.MainCommunity;
 
 public class MainActivity extends FragmentActivity /*implements View.OnClickListener*/{
     private Context context = MainActivity.this;
@@ -24,13 +24,13 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
     private RadioButton main_home;
     private RadioButton main_market;
     private RadioButton main_optional;
-    private RadioButton main_trading;
+    private RadioButton main_community;
     private RadioButton main_information;
     private RadioGroup mainRadioGroup;
     Fragment[] fragments={  new MainHome().getFragment(),
             new MainMarket().getFragment(),
             new MainOptional().getFragment(),
-            new MainTrading().getFragment(),
+            new MainCommunity().getFragment(),
             new MainInformation().getFragment()};
     private int index;
     private int currentTabIndex;
@@ -72,9 +72,9 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
         main_home = (RadioButton) findViewById(R.id.radio_button_home);
         main_market = (RadioButton) findViewById(R.id.radio_button_market);
         main_optional = (RadioButton) findViewById(R.id.radio_button_optional);
-        main_trading = (RadioButton) findViewById(R.id.radio_button_trading);
+        main_community = (RadioButton) findViewById(R.id.radio_button_community);
         main_information = (RadioButton) findViewById(R.id.radio_button_information);
-        RadioButton[] rbs = {main_home, main_market, main_optional, main_trading,main_information};
+        RadioButton[] rbs = {main_home, main_market, main_optional, main_community,main_information};
         for (RadioButton rb : rbs) {
             //挨着给每个RadioButton加入drawable限制边距以控制显示大小
             Drawable[] drs = rb.getCompoundDrawables();

@@ -8,20 +8,20 @@ import android.view.ViewGroup;
 
 import edu.ntu.graduation.R;
 
-public class MainTrading extends Fragment {
+public class MainCommunity extends Fragment {
     private View view;
-    private MainTrading fa;
+    private MainCommunity fa;
 
-    public MainTrading getFragment() {
+    public MainCommunity getFragment() {
         if (fa == null) {
-            fa = new MainTrading();
+            fa = new MainCommunity();
         }
         return fa;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.main_trading, container, false);
+        view = inflater.inflate(R.layout.main_community, container, false);
         return view;
     }
 }

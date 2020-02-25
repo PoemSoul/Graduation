@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/market_a_stocks_tl_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:xTabIndicatorColor="@color/red"
+        app:xTabIndicatorWidth="19dp"
+        app:xTabTextSize="14sp"
+        app:xTabSelectedTextSize="17sp"
+        app:xTabTextSelectedBold="true"
+        app:xTabSelectedTextColor="@color/red"
+        app:xTabTextColor="@color/black"
+        />
+
+    <View android:layout_width="match_parent"
+        android:layout_marginTop="-2dp"
+        android:layout_height="0.8dp"
+        android:alpha="0.6"
+        android:background="@color/light_gray"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/market_a_stocks_vp_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

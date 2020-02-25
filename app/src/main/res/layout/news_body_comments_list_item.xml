@@ -70,6 +70,7 @@
             android:textColor="@color/black"
             android:textSize="12sp"
             android:text="回复"
+            android:focusable="true"
             android:clickable="true"/>
         <RadioGroup
             android:layout_width="wrap_content"

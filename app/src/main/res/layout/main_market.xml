@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="60dp"
-        android:text="行情"/>
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:paddingTop="3dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logo"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/market_search_background"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:clickable="true">
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/search_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp"
+                android:text="请输入股票代码/简拼"/>
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/ai_white"/>
+    </LinearLayout>
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/market_tl_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/red"
+        app:xTabIndicatorHeight="0dp"
+        app:xTabTextSize="15sp"
+        app:xTabSelectedTextSize="18sp"
+        app:xTabTextSelectedBold="true"
+        app:xTabSelectedTextColor="@color/white"
+        app:xTabTextColor="#A3FFFFFF"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/market_vp_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
 </LinearLayout>
