@@ -29,7 +29,7 @@ public class MarketAStocksFragment extends BaseFragment{
     private List<String> titles = new ArrayList<>();
     private XTabLayout mTableLayout;
     private ViewPager mViewPager;
-    private MarketHuShengFragment mMarketHuShengFragment=new MarketHuShengFragment();
+    private MarketHuShenFragment mMarketHuShenFragment=new MarketHuShenFragment();
     private MarketBanKuaiFragment mMarketBanKuaiFragment=new MarketBanKuaiFragment();
     private MarketKeChuangFragment mMarketKeChuangFragment=new MarketKeChuangFragment();
 
@@ -66,7 +66,7 @@ public class MarketAStocksFragment extends BaseFragment{
         mTableLayout.setupWithViewPager(mViewPager);//此方法就是让tablayout和ViewPager联动
     }
     private void initData() {
-        fragments.add(mMarketHuShengFragment.newInstance("HuSheng"));
+        fragments.add(mMarketHuShenFragment.newInstance("HuShen"));
         fragments.add(mMarketBanKuaiFragment.newInstance("Bankuai"));
         fragments.add(mMarketKeChuangFragment.newInstance("KeChuangBan"));
         titles.add("沪深");

@@ -13,7 +13,7 @@ import java.util.List;
 import edu.ntu.graduation.R;
 import edu.ntu.graduation.util.TextBannerView;
 
-public class MarketHuShengFragment extends BaseFragment{
+public class MarketHuShenFragment extends BaseFragment{
     /**
      * 标志位，标志已经初始化完成
      */
@@ -30,7 +30,7 @@ public class MarketHuShengFragment extends BaseFragment{
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (mView == null) {
             // 需要inflate一个布局文件 填充Fragment
-            mView = inflater.inflate(R.layout.main_market_hu_sheng, container, false);
+            mView = inflater.inflate(R.layout.main_market_hu_shen, container, false);
             initDataBanner();
             initView();
             isPrepared = true;
@@ -56,7 +56,7 @@ public class MarketHuShengFragment extends BaseFragment{
     }
 
     private void initDataBanner(){
-        TextBannerView dataBanner = mView.findViewById(R.id.hu_sheng_data_banner);
+        TextBannerView dataBanner = mView.findViewById(R.id.hu_shen_data_banner);
         List<String> dataList = new ArrayList<>();
         dataList.add(stockData(-46.13)+"A股指数");
         dataList.add(stockData(63.12)+"B股指数");
@@ -84,8 +84,8 @@ public class MarketHuShengFragment extends BaseFragment{
         //填充各控件的数据
         mHasLoadedOnce = true;
     }
-    public static MarketHuShengFragment newInstance(String param1) {
-        MarketHuShengFragment fragment = new MarketHuShengFragment();
+    public static MarketHuShenFragment newInstance(String param1) {
+        MarketHuShenFragment fragment = new MarketHuShenFragment();
         Bundle args = new Bundle();
         args.putString("agrs1", param1);
         fragment.setArguments(args);
