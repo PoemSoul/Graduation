@@ -454,7 +454,7 @@
                         android:background="@drawable/market_hu_shen_radio_button_background_selector"
                         android:textColor="@color/checked_red_unchecked_black_selector"
                         android:textSize="14sp"
-                        android:text="快速涨幅"/>
+                        android:text="成交量"/>
                     <RadioButton
                         android:id="@+id/hu_shen_stocks_ranking_rb_4"
                         style="@style/RadioButtonStyle"
@@ -465,7 +465,7 @@
                         android:background="@drawable/market_hu_shen_radio_button_background_selector"
                         android:textColor="@color/checked_red_unchecked_black_selector"
                         android:textSize="14sp"
-                        android:text="成交额"/>
+                        android:text="交易量"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -482,7 +482,7 @@
                         android:background="@drawable/market_hu_shen_radio_button_background_selector"
                         android:textColor="@color/checked_red_unchecked_black_selector"
                         android:textSize="14sp"
-                        android:text="大单净量"/>
+                        android:text="换手率"/>
                     <RadioButton
                         android:id="@+id/hu_shen_stocks_ranking_rb_6"
                         style="@style/RadioButtonStyle"
@@ -493,7 +493,7 @@
                         android:background="@drawable/market_hu_shen_radio_button_background_selector"
                         android:textColor="@color/checked_red_unchecked_black_selector"
                         android:textSize="14sp"
-                        android:text="量比榜"/>
+                        android:text="当前价"/>
                     <RadioButton
                         android:id="@+id/hu_shen_stocks_ranking_rb_7"
                         style="@style/RadioButtonStyle"
@@ -504,7 +504,7 @@
                         android:background="@drawable/market_hu_shen_radio_button_background_selector"
                         android:textColor="@color/checked_red_unchecked_black_selector"
                         android:textSize="14sp"
-                        android:text="换手率"/>
+                        android:text="市盈率"/>
                     <RadioButton
                         android:id="@+id/hu_shen_stocks_ranking_rb_8"
                         style="@style/RadioButtonStyle"
@@ -515,7 +515,7 @@
                         android:background="@drawable/market_hu_shen_radio_button_background_selector"
                         android:textColor="@color/checked_red_unchecked_black_selector"
                         android:textSize="14sp"
-                        android:text="主力净流入"/>
+                        android:text="市净率"/>
                 </LinearLayout>
             </edu.ntu.graduation.util.CustomRadioGroup>
             <RelativeLayout
