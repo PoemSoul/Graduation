@@ -7,7 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.kelin.scrollablepanel.library.ScrollablePanel;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import edu.ntu.graduation.Adapter.ScrollablePanelAdapter;
 import edu.ntu.graduation.R;
+import edu.ntu.graduation.model.ColumnTitle;
+import edu.ntu.graduation.model.DataInfo;
+import edu.ntu.graduation.model.StockInfo;
 
 public class MarketHongKongStocksFragment extends  BaseFragment{
     /**
@@ -26,6 +36,11 @@ public class MarketHongKongStocksFragment extends  BaseFragment{
             // 需要inflate一个布局文件 填充Fragment
             mView = inflater.inflate(R.layout.main_market_hong_kong_stocks, container, false);
             initView();
+//            initData();
+            final ScrollablePanel scrollablePanel = mView.findViewById(R.id.hong_kong_stocks_scrollable_panel);
+            final ScrollablePanelAdapter scrollablePanelAdapter = new ScrollablePanelAdapter();
+            generateTestData(scrollablePanelAdapter);
+            scrollablePanel.setPanelAdapter(scrollablePanelAdapter);
             isPrepared = true;
 //        实现懒加载
             lazyLoad();
@@ -46,6 +61,50 @@ public class MarketHongKongStocksFragment extends  BaseFragment{
         Bundle bundle = getArguments();
         String args = bundle.getString("agrs1");
     }
+
+    private void generateTestData(ScrollablePanelAdapter scrollablePanelAdapter) {
+        List<StockInfo> stockInfoList = new ArrayList<>();
+        for (int i = 0; i < 6; i++) {
+            StockInfo stockInfo = new StockInfo();
+            stockInfo.setStockName("股票名称");
+            stockInfo.setRoomId(i);
+            stockInfo.setStockId("20" + i);
+            stockInfoList.add(stockInfo);
+        }
+        for (int i = 6; i < 30; i++) {
+            StockInfo stockInfo = new StockInfo();
+            stockInfo.setStockName("股票名称");
+            stockInfo.setRoomId(i);
+            stockInfo.setStockId("30" + i);
+            stockInfoList.add(stockInfo);
+        }
+        scrollablePanelAdapter.setStockInfoList(stockInfoList);
+
+        List<ColumnTitle> columnTitleList = new ArrayList<>();
+        for (int i = 0; i < 14; i++) {
+            ColumnTitle columnTitle = new ColumnTitle();
+            String column = "列"+i;
+            columnTitle.setColumnTitle(column);
+            columnTitleList.add(columnTitle);
+        }
+
+        scrollablePanelAdapter.setColumnTitleList(columnTitleList);
+
+        List<List<DataInfo>> dataList = new ArrayList<>();
+        Random rand=new Random();
+        for (int i = 0; i < 30; i++) {
+            List<DataInfo> dataInfoList = new ArrayList<>();
+            for (int j = 0; j < 14; j++) {
+                DataInfo dataInfo = new DataInfo();
+                dataInfo.setData(String.valueOf(rand.nextInt(20)-10));
+                dataInfoList.add(dataInfo);
+            }
+            dataList.add(dataInfoList);
+        }
+        scrollablePanelAdapter.setDataList(dataList);
+    }
+
+
     @Override
     public void lazyLoad() {
         if (!isPrepared || !isVisible || mHasLoadedOnce) {
