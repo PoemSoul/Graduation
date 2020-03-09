@@ -129,7 +129,7 @@
                         android:textColor="@color/black"
                         android:paddingTop="4dp"
                         android:textSize="12dp"
-                        android:text="投资参考"/>
+                        android:text="股市词典"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -150,25 +150,7 @@
                         android:textSize="12dp"
                         android:text="论股社区"/>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_weight="1">
-                    <ImageButton
-                        android:id="@+id/gumingxuexiao_btn"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:background="@drawable/gumingxuexiao" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:paddingTop="4dp"
-                        android:textSize="12dp"
-                        android:text="股民学校"/>
-                </LinearLayout>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -252,25 +234,7 @@
                         android:textSize="12dp"
                         android:text="停复牌"/>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_weight="1">
-                    <ImageButton
-                        android:id="@+id/more_btn"
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:background="@drawable/more" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:paddingTop="4dp"
-                        android:textSize="12dp"
-                        android:text="更多"/>
-                </LinearLayout>
+
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="6dp"

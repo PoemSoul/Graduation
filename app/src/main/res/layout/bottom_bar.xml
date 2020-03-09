@@ -35,9 +35,9 @@
             style="@style/RadioGroupButtonStyle"
             />
         <RadioButton
-            android:id="@+id/radio_button_information"
-            android:text="资讯"
-            android:drawableTop="@drawable/tab_information_selector"
+            android:id="@+id/radio_button_trading"
+            android:text="交易"
+            android:drawableTop="@drawable/tab_trading_selector"
             style="@style/RadioGroupButtonStyle"
             />
     </RadioGroup>

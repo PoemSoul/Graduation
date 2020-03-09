@@ -25,7 +25,7 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
     private RadioButton main_market;
     private RadioButton main_optional;
     private RadioButton main_community;
-    private RadioButton main_information;
+    private RadioButton main_trading;
     private RadioGroup mainRadioGroup;
     Fragment[] fragments={  new MainHome().getFragment(),
             new MainMarket().getFragment(),
@@ -73,8 +73,8 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
         main_market = (RadioButton) findViewById(R.id.radio_button_market);
         main_optional = (RadioButton) findViewById(R.id.radio_button_optional);
         main_community = (RadioButton) findViewById(R.id.radio_button_community);
-        main_information = (RadioButton) findViewById(R.id.radio_button_information);
-        RadioButton[] rbs = {main_home, main_market, main_optional, main_community,main_information};
+        main_trading = (RadioButton) findViewById(R.id.radio_button_trading);
+        RadioButton[] rbs = {main_home, main_market, main_optional, main_community,main_trading};
         for (RadioButton rb : rbs) {
             //挨着给每个RadioButton加入drawable限制边距以控制显示大小
             Drawable[] drs = rb.getCompoundDrawables();
