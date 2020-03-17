@@ -13,7 +13,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import edu.ntu.graduation.fragment.MainHome;
-import edu.ntu.graduation.fragment.MainInformation;
+import edu.ntu.graduation.fragment.MainTrading;
 import edu.ntu.graduation.fragment.MainMarket;
 import edu.ntu.graduation.fragment.MainOptional;
 import edu.ntu.graduation.fragment.MainCommunity;
@@ -31,7 +31,7 @@ public class MainActivity extends FragmentActivity /*implements View.OnClickList
             new MainMarket().getFragment(),
             new MainOptional().getFragment(),
             new MainCommunity().getFragment(),
-            new MainInformation().getFragment()};
+            new MainTrading().getFragment()};
     private int index;
     private int currentTabIndex;
 
