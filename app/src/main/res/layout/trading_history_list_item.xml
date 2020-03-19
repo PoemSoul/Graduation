@@ -28,26 +28,26 @@
         </RelativeLayout>
         <TextView
             android:id="@+id/trading_history_list_item_number"
-            android:layout_width="100dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@id/trading_history_list_item_time"
             android:layout_centerVertical="true"
             android:gravity="right"
             android:textColor="@color/black"
-            android:textSize="19sp"
+            android:textSize="17sp"
             android:text="500"/>
         <TextView
             android:id="@+id/trading_history_list_item_price"
-            android:layout_width="90dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/trading_history_list_item_number"
             android:layout_centerVertical="true"
             android:gravity="right"
             android:textColor="@color/black"
-            android:textSize="19sp"
+            android:textSize="17sp"
             android:text="6.58"/>
         <RelativeLayout
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/trading_history_list_item_price"
             android:layout_centerVertical="true">
@@ -66,9 +66,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="19sp"
+                android:textSize="17sp"
                 android:text="3290.00"/>
         </RelativeLayout>
+        <TextView
+            android:id="@+id/trading_history_list_item_time"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="2019年12月12日"/>
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
