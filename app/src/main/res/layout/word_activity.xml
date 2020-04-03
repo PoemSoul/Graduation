@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:paddingTop="3dp"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:layout_marginLeft="18dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/return_white"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="28dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/word_search_background"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/search_text_gray"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="29dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/text_gray"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:textSize="16sp"
+                android:hint="大盘" />
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:background="@drawable/red_bg"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="查 询"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/red"
+        android:textSize="26dp"
+        android:text="大盘"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@color/light_gray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingMultiplier="1.4"
+
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:text="大盘（market index）一般指上证综合指数。由于股票基金主要投资股票，因此与股市关系密切，需经常关注上证综合指数。"/>
+</LinearLayout>
