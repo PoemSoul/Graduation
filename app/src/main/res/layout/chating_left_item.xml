@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingTop="12dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/chat_ai"/>
+    <com.cxd.chatview.moudle.ChatView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="5dp"
+
+        xmlns:chat="http://schemas.android.com/apk/res-auto"
+        chat:arrow_direction="left"
+        chat:is_arrow_center="false"
+        chat:arrow_up_distance = "10dp"
+        chat:arrow_width = "8dp"
+        chat:arrow_height = "12dp"
+        chat:stroke_width = "1px"
+        chat:stroke_color = "@color/light_gray"
+        chat:fill_color = "@color/light_gray"
+        chat:conner_radius = "6dp"
+        >
+        <TextView
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:lineSpacingMultiplier="1.2"
+            android:text="别问，问就是管总有钱。其他的咱也不知道,知道咱也不敢说。说了你也不懂。"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.cxd.chatview.moudle.ChatView>
+</LinearLayout>

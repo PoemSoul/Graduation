@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "edu.ntu.graduation"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -29,4 +29,5 @@ dependencies {
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.androidkun:XTabLayout:1.1.4'
     implementation 'com.kelin.scrollablepanel:library:1.2.0'
+    implementation 'com.github.bigdongdong:ChatView:1.2'
 }
